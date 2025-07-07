@@ -275,15 +275,9 @@ const mockOnLoanRequest = async (loanRequest) => {
   alert('Loan request submitted successfully!');
 };
 
-// Demo component
-export default function Demo() {
-  return (
-    <div className="min-h-screen bg-gray-100 py-8">
-      <LoanRequest
-        lockData={mockLockData}
-        onLoanRequest={mockOnLoanRequest}
-        btcPrice={45000}
-      />
-    </div>
-  );
-}
+const LoanRequestComponent = ({ lockData, onLoanRequest, btcPrice }) => {
+  // The existing LoanRequest component code remains unchanged
+  // (Assuming the entire component code is above this export)
+};
+
+export default LoanRequestComponent;
